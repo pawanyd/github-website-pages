@@ -2,4 +2,72 @@
 layout: default
 title: Home
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+
+<!-- Header Section -->
+<header class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-bold text-blue-700">Pawan Kumar</div>
+        <nav class="hidden md:flex space-x-4">
+            <a href="#about" class="text-gray-700 hover:text-blue-700">About</a>
+            <a href="#projects" class="text-gray-700 hover:text-blue-700">Projects</a>
+            <a href="#contact" class="text-gray-700 hover:text-blue-700">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-blue-100 py-12 text-center">
+    <div class="container mx-auto px-6">
+        <h1 class="text-4xl font-bold text-blue-700">Pawan Kumar</h1>
+        <p class="text-gray-600 text-lg mt-4">Software Developer | 9+ Years Experience | PHP, JS, Laravel, React</p>
+        <a href="#projects" class="mt-6 inline-block bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-600">
+            View My Work
+        </a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-12 bg-white text-center">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">About Me</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+            I'm a passionate Software Developer with over 9 years of experience, specializing in PHP, JavaScript, Laravel, and React. 
+            I build scalable and high-performing web applications for businesses worldwide.
+        </p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-12 bg-gray-100 text-center">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <img src="https://placehold.co/400x250" alt="Project 1" class="mx-auto mb-4 rounded">
+                <h3 class="text-xl font-semibold text-gray-800">SaaS Web Builder</h3>
+                <p class="text-gray-600">A platform that creates websites in minutes.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <img src="https://placehold.co/400x250" alt="Project 2" class="mx-auto mb-4 rounded">
+                <h3 class="text-xl font-semibold text-gray-800">E-commerce Platform</h3>
+                <p class="text-gray-600">A scalable e-commerce system with React & Laravel.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <img src="https://placehold.co/400x250" alt="Project 3" class="mx-auto mb-4 rounded">
+                <h3 class="text-xl font-semibold text-gray-800">Survey SaaS Tool</h3>
+                <p class="text-gray-600">A dynamic survey system integrated into websites.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-12 bg-white text-center">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+        <p class="text-gray-600">Interested in working together? Let's connect.</p>
+        <div class="mt-6">
+            <a href="mailto:pawan@example.com" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-600">Email Me</a>
+        </div>
+    </div>
+</section>
